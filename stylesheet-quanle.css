@@ -1,0 +1,230 @@
+/* This is how I style my resume */
+
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 5%;
+	padding: 0;
+	height: 100%;
+	font: normal 100%;
+	font-weight: 400;
+	font-family: Arial, Helvetica, 'Gill Sans', Lucida, 'Helvetica Narrow', sans-serif;
+	color: rgb(88, 24, 24);
+	background-color: rgb(242, 246, 244);
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#wrapper {
+	margin: 0 10%;
+	padding-bottom: 2.5rem;
+}
+
+header {
+	background: rgb(57, 62, 70);
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 1px solid 57b1dc;
+	margin-top: 30px;
+}
+
+h2 {
+	color: rgb(39, 94, 201);
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h1, .category {
+	text-transform: uppercase;
+}
+
+dt a {
+	font-weight: bold;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 40px;
+	position: relative;
+}
+
+nav a {
+	color: rgb(211, 216, 214);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: rgb(237, 16, 115);
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: rgb(242, 246, 244);
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+div .direct-link a {
+	text-decoration: none;
+}
+
+div .direct-link a:link {
+	color: rgb(221, 29, 0); 
+}
+
+div .direct-link a:visited {
+	color: rgb(148, 5, 0);
+}
+
+div .direct-link a:hover {
+	color: rgb(211, 216, 214);
+	background-color: rgb(250, 105, 102);
+}
+
+div .direct-link a:focus {
+	color: rgb(211, 216, 214);
+	background-color: rgb(250, 81, 78);
+}
+
+div .direct-link a:active {
+	color: rgb(211, 216, 214);
+	background-color: rgb(163, 36, 16);
+}
+
+p, li, dd {
+	font-size: 1em;
+}
+
+p, li, dd, dt {
+	line-height: 1.75;
+}
+
+li {
+	list-style-type: disc;
+}
+
+figure {
+	float: right;
+}
+
+figure img {
+	box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.3);
+	margin-left: 10px;
+	margin-bottom: 10px;
+} 
+
+figure figcaption {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.contact-container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.contact-info {
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-info .box {
+	text-align: center;
+}
+
+.contact-info .box .icon h3, .contact-info .box .icon h4 {
+	position: relative;
+	font-weight: 400;
+	margin: 0;
+	padding: 2px 5px;
+	font-size: 24px;
+}
+
+.contact-info .box .icon h4 {
+	font-weight: 600;
+	margin: 5px 0;
+	font-size: 30px;
+}
+
+#gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div .gallery-item h2 {
+	text-align: center;
+}
+
+.gallery-item {
+	margin: 0 10px 20 10px;
+}
+
+.gallery-img {
+	width: 100%;
+	box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.3);
+	margin: 30px 0;
+}
+
+.caption {
+	width: 300px;
+	font-weight: bold;
+	font-size: 1.2em;
+	line-height: 1.2;
+	text-align: center;
+}
